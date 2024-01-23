@@ -10,7 +10,7 @@ app.get('/api/info', (req, res) => {
   const currentDate = new Date();
   const serverInfo = {
     serverName: 'expess server',
-
+    owner: 'abderrahim boudounit',
     currentDate: currentDate.toISOString(),
   };
   res.json(serverInfo);
