@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className=" mt-32  h-[calc(100vh-523px)]   max-w-[1000px] mx-auto">
+    <div className=" mt-32 text-white h-[calc(100vh-523px)] max-w-[1000px] mx-auto">
         <form className="flex flex-col items-start  px-20  justify-start ">
 
     <label className="mb-2 text-white  font-bold">Full name</label>
