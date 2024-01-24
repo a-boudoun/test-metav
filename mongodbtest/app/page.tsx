@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const [dataUser,setDataUser] = useState<any>([]);
 
-  const getData =async() =>{
+  const getData = async() =>{
     try {
       const data = await fetch('http://localhost:3000/api/user' , {
         method: "GET",
@@ -19,19 +19,19 @@ export default function Home() {
       }
   
       const user = await data.json();
-      console.log('data', user);
+      console.log('data => ', user);
 
       setDataUser(user)
     } catch (error) {
-      
+      console.log('error => ', error);
     }
   }
   useEffect(
-    
     () => {
       getData()
     },[]
   );
+
   return (
     <main className="=">
       {dataUser.map((user) =>{
