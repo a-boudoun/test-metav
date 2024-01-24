@@ -1,10 +1,10 @@
 const express = require('express');
-const morgan = require('morgan');
 const app = express();
 
-app.use(morgan('tiny'))
-
-app.use(express.json());
+app.use((req, res, next) => {
+  console.log(`incoming request method: ${req.method} | to url: ${req.url}`);
+  next();
+});
 
 app.get('/api/info', (req, res) => {
   const currentDate = new Date();

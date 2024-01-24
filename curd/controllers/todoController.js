@@ -34,7 +34,7 @@ let todos = [
       title: req.body.title,
       completed: req.body.completed || false,
     };
-  
+    
     todos.push(newTodo);
     res.status(201).json(newTodo);
   };
@@ -42,8 +42,12 @@ let todos = [
   exports.updateTodo = (req, res) => {
     const id = parseInt(req.params.id);
     const todoIndex = todos.findIndex((t) => t.id === id);
-  
+    
     if (todoIndex !== -1) {
+      if (!req.body.title && !req.body.completed)
+      {
+          return (res.status(400).json({message: 'bade request, title or completed required'}));
+      }
       todos[todoIndex] = {
         id,
         title: req.body.title || todos[todoIndex].title,
