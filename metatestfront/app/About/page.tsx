@@ -79,13 +79,16 @@ const page = () => {
         </div>
      
       </section>
-      <section className='flex text-2xl max-w-[1300px] mx-auto text-justify leading-loose'>
+      <section className='flex flex-col mb-8 text-2xl max-w-[1300px] mx-auto text-justify leading-loose'>
         <p>
         We understand that seeking care for mental health concerns can be challenging, with various barriers that can prevent individuals from receiving the support they need. That's why we are dedicated to removing those barriers and making mental health care more accessible to all. Whether it's geographical limitations, financial constraints, or stigmas surrounding mental health, we strive to bridge the gaps and create a safe and inclusive space where individuals can seek help without hesitation or obstacles.<br/>
 Equally important to us is easing the burdens for those delivering care. We recognize the immense dedication and compassion required from mental health professionals who work tirelessly to support individuals on their journey to recovery. By leveraging technology and innovative solutions, we aim to streamline and enhance the mental health care delivery process, empowering our dedicated professionals to focus on what they do best: helping individuals find their way back to themselves.<br/>
 We firmly believe that the right technology can transform lives. By harnessing the power of digital tools, we can extend our reach and impact, ensuring that individuals can access mental health resources anytime, anywhere. Whether through online counseling, teletherapy options, or user-friendly platforms, we embrace technology as a means to enhance the lives of people who are seeking a way back to themselves.<br/>
 Our purpose is to create a harmonious connection between compassionate care, cutting-edge technology, and the individuals we serve. We are driven by the conviction that everyone deserves the opportunity to prioritize their mental well-being and discover a path to inner peace and fulfillment. At Bimo Health, we are dedicated to making a meaningful difference in the lives of those who need it most, one step at a time.
         </p>
+        <button className='self-end underline mt-4 text-3xl'>
+          Show Less
+        </button>
       </section>
     </main>
   )
